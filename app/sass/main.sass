@@ -1,0 +1,164 @@
+@import "vars"
+
+/*==========  section home ==========*/
+.home-slider
+  .slick-dots
+    bottom: 114px
+    left: 50%
+    transform: translate(-50%,0)
+    padding: 0 20px
+    max-width: 1780px
+    width: 100%
+    justify-content: flex-end
+  &__bg
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.home-slider-item
+  min-height: 1080px
+  padding: 98px 0 160px
+  display: flex
+  flex-direction: column
+  color: #fff
+  &__content
+    margin: auto 0 0
+  &__title
+    text-transform: uppercase
+    font-size: 100px
+    font-weight: bold
+    font-family: $futura-font
+    line-height: 128px
+
+
+/*==========  section home end  ==========*/
+
+
+
+/*==========  section bestsellers ==========*/
+.bestsellers
+  margin: 84px 0 60px
+
+.product-card
+  width: 100%
+  background: #fff
+  position: relative
+  padding: 12px 10px 43px
+  margin: 0 0 17px
+  &__img
+    width: 100%
+    height: 537px
+    @include d-flex
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    padding: 32px 0 0
+    font-size: 18px
+    font-weight: 500
+  &__name
+    color: #000
+    &:hover
+      color: $accent
+  &__price
+    font-weight: bold
+    margin: 0 0 0 auto
+
+
+
+.btn-add-favorite
+  top: 30px
+  right: 31px
+  position: absolute
+  z-index: 1
+  fill: none
+  stroke: #fff
+  width: 26px
+  height: 26px
+  @include d-flex
+  &:hover
+    stroke: $accent
+/*==========  section bestsellers end  ==========*/
+
+
+/*==========  section news ==========*/
+.news
+  margin: 0 0 68px
+/*==========  section news end  ==========*/
+
+
+
+/*==========  section about ==========*/
+.about
+  position: relative
+  color: #fff
+  background: #000 url("../img/about-bg.jpeg") no-repeat left center
+    size: calc(100% - 208px)
+  padding: 155px 0 210px
+  h2
+    font-size: 48px
+
+  .box-text
+    margin: 66px 0 50px
+    font-size: 24px
+    font-family: $averta-font
+    max-width: 638px
+    width: 100%
+  .btn
+    font-size: 14px
+    max-width: none
+    padding: 0 21px
+    width: fit-content
+
+.about-logo
+  position: absolute
+  right: 0
+  top: 0
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 133px 0 75px
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 45%
+    transform: translate(-50%,0)
+    background: #fff
+    width: 1px
+    height: 223px
+  &:before
+    top: 133px
+  &:after
+    bottom: 75px
+  &__img
+    padding: 0 10px
+    transform: rotate(90deg)
+    @include d-flex
+  img
+    filter: brightness(0) invert(1)
+
+    max-width: 41px
+
+/*==========  section about end  ==========*/
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
