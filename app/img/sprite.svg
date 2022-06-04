@@ -37,4 +37,15 @@
         <path d="M2.07692 0L0 2.07692L11.4231 13.5L0 24.9231L2.07692 27L13.5 15.5769L24.9231 27L27 24.9231L15.5769 13.5L27 2.07692L24.9231 0L13.5 11.4231L2.07692 0Z"/>
     </symbol>
 
+    <symbol id="arrow-left" viewBox="0 0 57 28">
+        <path d="M56.5068 14.686L2.99998 14.686" stroke-width="3" stroke-miterlimit="10"/>
+        <path d="M15.3672 2.0002L2.99986 14.3575L15.3672 26.7249" stroke-width="3"
+              stroke-miterlimit="10"/>
+    </symbol>
+
+    <symbol id="arrow-right" viewBox="0 0 57 28">
+        <path d="M0.493164 14.0388L54 14.0388" stroke-width="3" stroke-miterlimit="10"/>
+        <path d="M41.6328 26.7247L54.0001 14.3673L41.6328 2" stroke-width="3" stroke-miterlimit="10"/>
+    </symbol>
+
 </svg>

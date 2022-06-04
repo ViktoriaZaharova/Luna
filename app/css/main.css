@@ -41,6 +41,10 @@
     font-weight: bold;
     font-family: "FuturaPT", sans-serif;
     line-height: 128px; }
+  .home-slider-item .btn {
+    max-width: 277px;
+    width: 100%;
+    font-size: 24px; }
 
 /*==========  section home end  ==========*/
 /*==========  section bestsellers ==========*/
@@ -133,13 +137,6 @@
     font-family: "AvertaDemoPE", sans-serif;
     max-width: 638px;
     width: 100%; }
-  .about .btn {
-    font-size: 14px;
-    max-width: none;
-    padding: 0 21px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content; }
 
 .about-logo {
   position: absolute;
@@ -188,6 +185,202 @@
     max-width: 41px; }
 
 /*==========  section about end  ==========*/
+/*==========  section catalog ==========*/
+.catalog-section {
+  margin: 117px 0 192px; }
+
+.catalog-slider {
+  margin: 38px 0 0 -10px;
+  min-width: 2000px; }
+  .catalog-slider .slick-slide {
+    padding: 30px 5px;
+    width: 287px;
+    height: 431px; }
+  .catalog-slider__nav {
+    margin-left: auto; }
+
+.catalog-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-weight: bold;
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background: #000; }
+  .catalog-card:hover {
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    width: calc(100% + 30px); }
+    .catalog-card:hover:before {
+      opacity: 0; }
+    .catalog-card:hover .catalog-card__img {
+      height: calc(100% + 60px);
+      -webkit-filter: none;
+              filter: none;
+      opacity: 1; }
+  .catalog-card__name {
+    padding: 39px 27px;
+    width: 100%; }
+  .catalog-card__img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    opacity: .5;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    z-index: -2;
+    -webkit-transition: .3s ease;
+    transition: .3s ease; }
+
+/*==========  section catalog end  ==========*/
+/*==========  section services-section ==========*/
+.services-section {
+  position: relative;
+  color: #fff;
+  z-index: 1;
+  padding: 84px 0 102px;
+  background: #000; }
+  .services-section .box-text {
+    margin: 48px 0 76px;
+    font-size: 24px;
+    font-family: "AvertaDemoPE", sans-serif; }
+  .services-section:before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    background: url("../img/services-bg.png") no-repeat center;
+      background-size: cover;
+    opacity: .4; }
+  .services-section .btn {
+    padding: 0 56px;
+    font-size: 14px; }
+
+.services-item {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  padding: 70px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase; }
+  .services-item:hover {
+    color: #C8A7A7; }
+
+/*==========  section services-section end  ==========*/
+/*==========  section reviews ==========*/
+.reviews {
+  margin: 162px 0; }
+  .reviews h2 {
+    margin: 0 0 55px; }
+  .reviews .btn {
+    font-size: 14px;
+    margin: 40px auto 0;
+    padding: 0 43px; }
+
+.reviews-box {
+  width: 100%;
+  margin: 0 0 36px;
+  border: 1px solid #C8A7A7;
+    border-radius: 10px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .reviews-box img {
+    width: 100%; }
+
+/*==========  section reviews end  ==========*/
+/*==========  section certificate ==========*/
+.certificate {
+  margin: 197px 0 173px; }
+
+.certificate-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .certificate-box__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 670px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden; }
+    .certificate-box__img img {
+      width: 100%; }
+  .certificate-box__body {
+    width: calc(100% - 670px);
+    padding: 0 0 0 40px; }
+  .certificate-box .box-text {
+    font-size: 20px;
+    line-height: 29px;
+    font-family: "AvertaDemoPE", sans-serif;
+    margin: 0 0 20px; }
+
+/*==========  section certificate end  ==========*/
 /*==========  section  ==========*/
 /*==========  section end  ==========*/
 /*==========  section  ==========*/
