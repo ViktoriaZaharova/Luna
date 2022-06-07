@@ -1,11 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" display="none">
 
-    <symbol id="burger" viewBox="0 0 39 28">
-        <path d="M39 0H0V4H39V0Z"/>
-        <path d="M39 12H0V16H39V12Z"/>
-        <path d="M39 24H0V28H39V24Z"/>
-    </symbol>
-
     <symbol id="search" viewBox="0 0 27 26">
         <path d="M17.5191 16.8584L26 25M20.3708 10.2979C20.3708 15.433 16.0345 19.5959 10.6854 19.5959C5.33629 19.5959 1 15.433 1 10.2979C1 5.16283 5.33629 1 10.6854 1C16.0345 1 20.3708 5.16283 20.3708 10.2979Z"
               stroke-width="2" stroke-miterlimit="10"/>
@@ -47,5 +41,15 @@
         <path d="M0.493164 14.0388L54 14.0388" stroke-width="3" stroke-miterlimit="10"/>
         <path d="M41.6328 26.7247L54.0001 14.3673L41.6328 2" stroke-width="3" stroke-miterlimit="10"/>
     </symbol>
+
+
+    <symbol id="left" viewBox="0 0 23 44">
+        <path d="M22 43L1 22L22 1"/>
+    </symbol>
+
+    <symbol id="right" viewBox="0 0 23 44">
+        <path d="M1 1L22 22L1 43"/>
+    </symbol>
+
 
 </svg>

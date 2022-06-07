@@ -21,6 +21,7 @@
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -31,15 +32,88 @@
 
 <body>
 
+<div class="mobile-menu">
+  <div class="mobile-menu__head">
+    <ul class="list-social my-ul">
+      <li><a href="#" class="vk-link">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#vk"></use>
+        </svg>
+      </a></li>
+      <li><a href="#" class="tg-link">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#telegram"></use>
+        </svg>
+      </a></li>
+      <li><a href="#" class="whatsapp-link">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#whatsapp"></use>
+        </svg>
+      </a></li>
+    </ul>
+
+    <a href="#" class="btn-close-menu">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </a>
+  </div>
+
+  <div class="mobile-menu__body">
+    <form method="post" class="form-search">
+      <label>
+        <input type="text" placeholder="поиск" name="search">
+      </label>
+      <button type="submit">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+      </button>
+    </form>
+
+    <ul class="menu-cabinet my-ul">
+      <li><a href="basket.html" class="menu-cabinet-link">
+        <span class="menu-cabinet-link__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#basket"></use></svg></span>
+        <span class="menu-cabinet-link__text">корзина</span>
+      </a></li>
+      <li><a href="favorites.html" class="menu-cabinet-link">
+        <span class="menu-cabinet-link__icon"><svg class="svg-icon"><use
+            xlink:href="img/sprite.svg#star"></use></svg></span>
+        <span class="menu-cabinet-link__text">избранное</span>
+      </a></li>
+    </ul>
+    <ul class="mobile-menu__list my-ul mobile-menu-category">
+      <li class="d-flex d-sm-none"><a href="#" class="btn btn-accent">перейти в каталог</a></li>
+      <li><a href="#">Корсеты</a></li>
+      <li><a href="#">Манжеты</a></li>
+      <li><a href="#">Будуарные платья</a></li>
+      <li><a href="#">Свадебные подвязки</a></li>
+      <li><a href="#">Халаты</a></li>
+      <li><a href="#">Чокеры</a></li>
+      <li><a href="#">Подтяжки</a></li>
+      <li><a href="#">Бандо-топ</a></li>
+      <li><a href="#">Вечерние подвязки</a></li>
+      <li><a href="#">Галстуки</a></li>
+    </ul>
+    <ul class="mobile-menu__list my-ul mobile-menu-home">
+      <li><a href="about.html">о нас</a></li>
+      <li><a href="services.html">услуги</a></li>
+      <li><a href="delivery.html">доставка и оплата</a></li>
+      <li><a href="question.html">вопросы и ответы</a></li>
+      <li><a href="reviews.html">отзывы</a></li>
+      <li><a href="contacts.html">контакты</a></li>
+    </ul>
+  </div>
+</div>
 
 <header>
   <div class="container">
     <div class="row">
       <div class="col-12 d-flex align-items-center">
         <a href="#" class="btn-burger">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#burger"></use>
-          </svg>
+         <span></span>
+         <span></span>
+         <span></span>
         </a>
         <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
 
@@ -70,6 +144,7 @@
   <div class="home-slider">
     <div class="slide">
       <img src="img/slide1.jpeg" alt="" class="home-slider__bg">
+      <img src="img/slide-mob.png" alt="" class="home-slider__bg slide-bg-mob">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -271,8 +346,8 @@
 <section class="about">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-5 offset-lg-7">
-        <div class="about-content">
+      <div class="col-12 col-xl-5 offset-xl-7 col-lg-6 offset-lg-6">
+        <div class="about-content d-none d-sm-block">
           <h2>О нас</h2>
           <div class="box-text">
             <p>Luna- это про силу деталей в вашем образе. Детали, которые быстро меняют его характер. Быть разной-
@@ -281,6 +356,15 @@
           </div>
 
           <a href="#" class="btn btn-border">узнать больше о нас</a>
+        </div>
+
+        <div class="about-content d-block d-sm-none">
+          <h2>Чокеры</h2>
+          <div class="box-text">
+            <p>Luna- это про силу деталей в вашем образе. Детали, которые быстро меняют его характер.</p>
+          </div>
+
+          <a href="#" class="btn btn-border">посмотреть все чокеры</a>
         </div>
       </div>
     </div>
@@ -409,33 +493,33 @@
     </div>
 
     <div class="row">
-      <div class="col-12 col-sm-6 col-md-3 col-lg-4 col-xl-2">
+      <div class="col-6 col-sm-6 col-md-4 col-xl-2">
         <a href="img/reviews1.jpg" class="reviews-box" data-fancybox="image-reviews"><img src="img/reviews1.jpg" alt=""></a>
         <a href="img/reviews2.jpg" class="reviews-box" data-fancybox="image-reviews"><img src="img/reviews2.jpg" alt=""></a>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-3 col-lg-4 col-xl-2">
+      <div class="col-6 col-sm-6 col-md-4 col-xl-2">
         <a href="img/reviews3.jpg" class="reviews-box" data-fancybox="image-reviews"><img src="img/reviews3.jpg" alt=""></a>
         <a href="img/reviews4.jpg" class="reviews-box" data-fancybox="image-reviews"><img src="img/reviews4.jpg" alt=""></a>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-3 col-lg-4 col-xl-2">
+      <div class="d-none d-md-block col-6 col-sm-6 col-md-4 col-xl-2">
         <a href="img/reviews5.jpg" class="reviews-box" data-fancybox="image-reviews"><img src="img/reviews5.jpg" alt=""></a>
         <a href="img/reviews6.jpg" class="reviews-box" data-fancybox="image-reviews"><img src="img/reviews6.jpg" alt=""></a>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-3 col-lg-4 col-xl-2">
+      <div class="d-none d-md-block col-6 col-sm-6 col-md-4 col-xl-2">
         <a href="img/reviews7.jpg" class="reviews-box" data-fancybox="image-reviews"><img src="img/reviews7.jpg" alt=""></a>
         <a href="img/reviews8.jpg" class="reviews-box" data-fancybox="image-reviews"><img src="img/reviews8.jpg" alt=""></a>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-3 col-lg-4 col-xl-2">
+      <div class="d-none d-md-block col-6 col-sm-6 col-md-4 col-xl-2">
         <a href="img/reviews9.jpg" class="reviews-box" data-fancybox="image-reviews"><img src="img/reviews9.jpg" alt=""></a>
         <a href="img/reviews10.jpg" class="reviews-box" data-fancybox="image-reviews"><img src="img/reviews10.jpg"
                                                                                            alt=""></a>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-3 col-lg-4 col-xl-2">
+      <div class="d-none d-md-block col-6 col-sm-6 col-md-4 col-xl-2">
         <a href="img/reviews11.jpg" class="reviews-box" data-fancybox="image-reviews"><img src="img/reviews11.jpg"
                                                                                            alt=""></a>
         <a href="img/reviews12.jpg" class="reviews-box" data-fancybox="image-reviews"><img src="img/reviews12.jpg"
@@ -453,16 +537,24 @@
 <section class="certificate">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-10 offset-lg-1">
+      <div class="col-12 col-xl-10 offset-xl-1">
         <div class="certificate-box">
           <div class="certificate-box__img"><img src="img/certificate.jpeg" alt=""></div>
           <div class="certificate-box__body">
             <h2>Подарочный сертификат</h2>
-            <div class="box-text">
-              <p>Равным образом новая модель организационной деятельности в значительной степени обуславливает создание направлений прогрессивного развития. Не следует, однако забывать, что консультация с широким активом в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям.</p>
+            <div class="box-text d-none d-sm-block">
+              <p>Равным образом новая модель организационной деятельности в значительной степени обуславливает создание
+                направлений прогрессивного развития. Не следует, однако забывать, что консультация с широким активом в
+                значительной степени обуславливает создание системы обучения кадров, соответствует насущным
+                потребностям.</p>
             </div>
 
-            <a href="#" class="btn btn-border">получить сертификат</a>
+            <div class="box-text d-block d-sm-none">
+              <p>Равным образом новая модель организационной деятельности в значительной степени обуславливает создание
+                направлений прогрессивного развития.</p>
+            </div>
+
+            <a href="#" class="btn btn-border" data-toggle="modal" data-target="#callModal">получить сертификат</a>
           </div>
         </div>
       </div>
@@ -477,33 +569,78 @@
         <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
 
         <div class="menu-footer">
-          <ul class="list-menu my-ul">
-            <li><a href="services.html">услуги</a></li>
-            <li><a href="contacts.html">контакты</a></li>
-            <li><a href="#">обмен и Возврат</a></li>
-            <li><a href="about.html">о нас</a></li>
-            <li class="d-block d-sm-none"><a href="delivery.html">оплата и доставка</a></li>
-          </ul>
+          <div class="list-menu my-ul">
+            <div class="list-menu-item">
+              <a href="services.html">услуги</a>
+              <a href="contacts.html">контакты</a>
+            </div>
+            <div class="list-menu-item">
+              <a href="#">обмен и Возврат</a>
+              <a class="m-0" href="about.html">о нас</a>
+              <a class="d-block d-sm-none" href="delivery.html">оплата и доставка</a>
+            </div>
+          </div>
 
-          <ul class="list-menu my-ul">
-            <li class="d-none d-sm-block"><a href="delivery.html">оплата и доставка</a></li>
-            <li><a href="question.html">вопросы и ответы</a></li>
-            <li><a href="reviews.html">отзывы</a></li>
-            <li><a href="catalog.html">каталог</a></li>
-            <li><a href="favorites.html">избранное</a></li>
-            <li><a href="#">оптовикам</a></li>
-          </ul>
+          <div class="list-menu my-ul">
+            <div class="list-menu-item">
+              <a class="d-none d-sm-block" href="delivery.html">оплата и доставка</a>
+              <a href="question.html">вопросы и ответы</a>
+            </div>
+            <div class="list-menu-item">
+              <a href="#reviews" class="go_to">отзывы</a>
+              <a href="catalog.html">каталог</a>
+            </div>
+            <div class="list-menu-item">
+              <a href="favorites.html">избранное</a>
+              <a href="#">оптовикам</a>
+            </div>
+          </div>
         </div>
 
         <ul class="list-social my-ul">
-          <li><a href="#"><svg class="svg-icon"><use xlink:href="img/sprite.svg#vk"></use></svg></a></li>
-          <li><a href="#"><svg class="svg-icon"><use xlink:href="img/sprite.svg#telegram"></use></svg></a></li>
-          <li><a href="#"><svg class="svg-icon"><use xlink:href="img/sprite.svg#whatsapp"></use></svg></a></li>
+          <li><a href="#" class="vk-link">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a></li>
+          <li><a href="#" class="tg-link">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg>
+          </a></li>
+          <li><a href="#" class="whatsapp-link">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#whatsapp"></use>
+            </svg>
+          </a></li>
         </ul>
       </div>
     </div>
   </div>
 </footer>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="callModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Заказать звонок</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form form-call">
+          <label>
+            <input type="text" placeholder="Ваше имя" name="name">
+          </label>
+          <label>
+            <input type="text" placeholder="Ваш телефон" name="phone">
+          </label>
+          <button type="submit" class="btn btn-accent">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <script src="js/jquery.min.js"></script>
@@ -512,6 +649,9 @@
         crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js" integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/common.js"></script>
 
 </body>

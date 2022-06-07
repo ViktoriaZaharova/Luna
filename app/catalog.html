@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Luna</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="mobile-menu__head">
+    <ul class="list-social my-ul">
+      <li><a href="#" class="vk-link">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#vk"></use>
+        </svg>
+      </a></li>
+      <li><a href="#" class="tg-link">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#telegram"></use>
+        </svg>
+      </a></li>
+      <li><a href="#" class="whatsapp-link">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#whatsapp"></use>
+        </svg>
+      </a></li>
+    </ul>
+
+    <a href="#" class="btn-close-menu">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </a>
+  </div>
+
+  <div class="mobile-menu__body">
+    <form method="post" class="form-search">
+      <label>
+        <input type="text" placeholder="поиск" name="search">
+      </label>
+      <button type="submit">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+      </button>
+    </form>
+
+    <ul class="menu-cabinet my-ul">
+      <li><a href="basket.html" class="menu-cabinet-link">
+        <span class="menu-cabinet-link__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#basket"></use></svg></span>
+        <span class="menu-cabinet-link__text">корзина</span>
+      </a></li>
+      <li><a href="favorites.html" class="menu-cabinet-link">
+        <span class="menu-cabinet-link__icon"><svg class="svg-icon"><use
+            xlink:href="img/sprite.svg#star"></use></svg></span>
+        <span class="menu-cabinet-link__text">избранное</span>
+      </a></li>
+    </ul>
+    <ul class="mobile-menu__list my-ul mobile-menu-category">
+      <li class="d-flex d-sm-none"><a href="#" class="btn btn-accent">перейти в каталог</a></li>
+      <li><a href="#">Корсеты</a></li>
+      <li><a href="#">Манжеты</a></li>
+      <li><a href="#">Будуарные платья</a></li>
+      <li><a href="#">Свадебные подвязки</a></li>
+      <li><a href="#">Халаты</a></li>
+      <li><a href="#">Чокеры</a></li>
+      <li><a href="#">Подтяжки</a></li>
+      <li><a href="#">Бандо-топ</a></li>
+      <li><a href="#">Вечерние подвязки</a></li>
+      <li><a href="#">Галстуки</a></li>
+    </ul>
+    <ul class="mobile-menu__list my-ul mobile-menu-home">
+      <li><a href="about.html">о нас</a></li>
+      <li><a href="services.html">услуги</a></li>
+      <li><a href="delivery.html">доставка и оплата</a></li>
+      <li><a href="question.html">вопросы и ответы</a></li>
+      <li><a href="reviews.html">отзывы</a></li>
+      <li><a href="contacts.html">контакты</a></li>
+    </ul>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex align-items-center">
+        <a href="#" class="btn-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+        <ul class="list-navigation my-ul">
+          <li><a href="#" class="search-links">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </a></li>
+          <li><a href="basket.html" class="basket-links">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#basket"></use>
+            </svg>
+          </a></li>
+          <li><a href="favorites.html" class="favorite-links">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<div class="page page-catalog">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav aria-label="breadcrumb" class="breadcrumb-nav">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">каталог</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-12 col-lg-3">
+        <h1>каталог</h1>
+
+        <div class="sidebar">
+          <a href="#" class="catalog-menu-dropdown">Корсеты</a>
+          <ul class="catalog-menu my-ul">
+            <li><a href="#" class="active">Корсеты</a></li>
+            <li><a href="#">манжеты</a></li>
+            <li><a href="#">будуарные платья</a></li>
+            <li><a href="#">Свадебные подвязки</a></li>
+            <li><a href="#">халаты</a></li>
+            <li><a href="#">Чокеры</a></li>
+            <li><a href="#">Подтяжки</a></li>
+            <li><a href="#">Бандо-топ</a></li>
+            <li><a href="#">Вечерние подвязки</a></li>
+            <li><a href="#">Галстуки</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="col-12 col-lg-9">
+        <div class="row">
+          <div class="col-12 mb-85">
+            <div class="sorting-wrapper">
+              <a href="#" class="sorting-box active">новинки</a>
+              <a href="#" class="sorting-box">бестселлеры</a>
+              <div class="dropdown">
+                <a href="#" class="dropdown-toggle sorting-box" data-toggle="dropdown">по цене</a>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">сначала дешевые</a>
+                  <a href="#" class="dropdown-item">сначала дорогие</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="row">
+              <div class="col-6 col-md-4">
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__img"><img src="img/product2.jpeg" alt=""></a>
+
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Подвязка #theshuman</a>
+                    <div class="product-card__price">120 €</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__img"><img src="img/product3.jpeg" alt=""></a>
+
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Подвязка #theshuman</a>
+                    <div class="product-card__price">120 €</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__img"><img src="img/product4.jpeg" alt=""></a>
+
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Подвязка #theshuman</a>
+                    <div class="product-card__price">120 €</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__img"><img src="img/product6.jpeg" alt=""></a>
+
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Подвязка #theshuman</a>
+                    <div class="product-card__price">120 €</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__img"><img src="img/product7.jpeg" alt=""></a>
+
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Подвязка #theshuman</a>
+                    <div class="product-card__price">120 €</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="product-card__img"><img src="img/product8.jpeg" alt=""></a>
+
+                  <div class="product-card__body">
+                    <a href="product.html" class="product-card__name">Подвязка #theshuman</a>
+                    <div class="product-card__price">120 €</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<section class="certificate certificate-v2">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-xl-10 offset-xl-1">
+        <div class="certificate-box">
+          <div class="certificate-box__img"><img src="img/certificate.jpeg" alt=""></div>
+          <div class="certificate-box__body">
+            <h2>Подарочный сертификат</h2>
+            <div class="box-text d-none d-sm-block">
+              <p>Равным образом новая модель организационной деятельности в значительной степени обуславливает создание
+                направлений прогрессивного развития. Не следует, однако забывать, что консультация с широким активом в
+                значительной степени обуславливает создание системы обучения кадров, соответствует насущным
+                потребностям.</p>
+            </div>
+
+            <div class="box-text d-block d-sm-none">
+              <p>Равным образом новая модель организационной деятельности в значительной степени обуславливает создание
+                направлений прогрессивного развития.</p>
+            </div>
+
+            <a href="#" class="btn btn-border" data-toggle="modal" data-target="#callModal">получить сертификат</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap align-items-center">
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+        <div class="menu-footer">
+          <div class="list-menu my-ul">
+            <div class="list-menu-item">
+              <a href="services.html">услуги</a>
+              <a href="contacts.html">контакты</a>
+            </div>
+            <div class="list-menu-item">
+              <a href="#">обмен и Возврат</a>
+              <a class="m-0" href="about.html">о нас</a>
+              <a class="d-block d-sm-none" href="delivery.html">оплата и доставка</a>
+            </div>
+          </div>
+
+          <div class="list-menu my-ul">
+            <div class="list-menu-item">
+              <a class="d-none d-sm-block" href="delivery.html">оплата и доставка</a>
+              <a href="question.html">вопросы и ответы</a>
+            </div>
+            <div class="list-menu-item">
+              <a href="#reviews" class="go_to">отзывы</a>
+              <a href="catalog.html">каталог</a>
+            </div>
+            <div class="list-menu-item">
+              <a href="favorites.html">избранное</a>
+              <a href="#">оптовикам</a>
+            </div>
+          </div>
+        </div>
+
+        <ul class="list-social my-ul">
+          <li><a href="#" class="vk-link">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a></li>
+          <li><a href="#" class="tg-link">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg>
+          </a></li>
+          <li><a href="#" class="whatsapp-link">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#whatsapp"></use>
+            </svg>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="callModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Заказать звонок</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form form-call">
+          <label>
+            <input type="text" placeholder="Ваше имя" name="name">
+          </label>
+          <label>
+            <input type="text" placeholder="Ваш телефон" name="phone">
+          </label>
+          <button type="submit" class="btn btn-accent">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
+        integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"
+        integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

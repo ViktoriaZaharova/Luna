@@ -11,9 +11,9 @@ header
 
   .logo
     position: absolute
-    top: 50%
+    top: -20px
     left: 50%
-    transform: translate(-50%,-50%)
+    transform: translate(-50%,0)
     max-width: 148px
 
   &.fixed
@@ -33,6 +33,14 @@ header
   fill: #fff
   margin: 0 auto 0 0
   @include d-flex
+  flex-direction: column
+  justify-content: space-between
+  span
+    display: block
+    width: 100%
+    height: 3px
+    background: #fff
+
 
 .list-navigation
   display: flex
@@ -63,6 +71,103 @@ header
 
 
 
-/*==========  section  ==========*/
+/*==========  mobile-menu  ==========*/
+.mobile-menu
+  display: none
+  position: fixed
+  z-index: 5
+  left: 0
+  top: 0
+  height: 100%
+  width: 100%
+  max-width: 477px
+  overflow-y: auto
+  background: #000
+  padding: 55px 54px 80px 40px
+  &__head
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin: 0 0 42px
+  &__body
+    width: 100%
+  .list-social
+    li
+      margin: 0 23px 0 0
+  .form-search
+    margin: 0 0 48px
 
-/*==========  section end  ==========*/
+
+.btn-close-menu
+  @include d-flex
+  fill: #fff
+  width: 27px
+  height: 27px
+  margin-left: auto
+
+.form-search
+  width: 100%
+  position: relative
+  label
+    margin: 0
+  input
+    border: 1px solid #C8A7A7
+    height: 45px
+    padding: 0 32px 0 17px
+    background: transparent
+    color: #fff
+    font-size: 20px
+    &::placeholder
+      color: #fff
+  button
+    fill: none
+    stroke: #fff
+    background: transparent
+    width: 18px
+    height: 18px
+    position: absolute
+    right: 14px
+    top: 50%
+    transform: translate(0,-50%)
+
+.menu-cabinet
+  width: 100%
+  font-size: 20px
+  li
+    width: 100%
+    margin: 0 0 36px
+
+.menu-cabinet-link
+  display: flex
+  align-items: center
+  color: #ffffff
+  &:hover
+    color: $accent
+  &__icon
+    fill: none
+    stroke: #fff
+    @include d-flex
+    width: 24px
+    height: 24px
+    min-width: 24px
+    margin: 0 14px 0 0
+
+.mobile-menu__list
+  padding: 30px 0 0 40px
+  border-top: 1px solid #C8A7A7
+  margin: 0 0 27px
+  li
+    margin: 0 0 25px
+    &:last-child
+      margin: 0
+    a
+      color: #fff
+      &:hover
+        color: $accent
+
+.mobile-menu-home
+  li
+    margin: 0 0 11px
+
+/*==========  mobile-menu end  ==========*/

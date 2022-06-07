@@ -72,20 +72,36 @@ input, textarea, select
   outline: none
   box-shadow: none
   appearance: none
-  padding: 0
+  padding: 0 16px
   box-sizing: border-box
   font-family: $default-font
-  border: none
+  border: 1px solid $accent
     radius: 0
   width: 100%
+  height: 40px
+  font-size: 14px
+  color: #000
+  &::placeholder
+    color: #000
   &:hover
     outline: none
     box-shadow: none
   
+textarea
+  background: transparent
+  border: 1px solid #fff
+  resize: none
+  padding: 8px 16px
+  height: 96px
+  color: #fff
+  &::placeholder
+    color: #fff
 
 label
   display: block
   width: 100%
+  margin: 0 0 16px
+
 
 button, .btn
   outline: none
@@ -97,7 +113,9 @@ button, .btn
   margin: 0
   border: none
     radius: 0
-
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
 
 .btn
   display: flex
@@ -106,6 +124,7 @@ button, .btn
   text-align: center
   height: 39px
   font-size: 14px
+  font-weight: 500
   padding: 0 21px
 
 .btn-lg
@@ -167,6 +186,11 @@ a.color-accent
   &:hover
     color: #000
 
+h1
+  font-size: 36px
+  font-weight: bold
+  text-transform: uppercase
+  margin: 0 0 20px
 
 h2
   font-size: 36px
@@ -211,8 +235,27 @@ h2
   font-size: 22px
   margin: auto 0 0 137px
 
+.mb-17
+  margin-bottom: 17px
+
+.mb-22
+  margin-bottom: 22px
+
+.mb-60
+  margin-bottom: 60px
+
 .mb-75
   margin-bottom: 75px
+
+.mb-85
+  margin-bottom: 85px
+
+.color-inherit
+  color: inherit
+
+a.color-inherit
+  &:hover
+    color: $accent
 
 .slick-arrow
   position: relative
@@ -234,3 +277,55 @@ h2
   .slick-next
     margin: 0 0 0 73px
 
+.list-social
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  li
+    margin: 0 50px 0 0
+    &:last-child
+      margin: 0
+    a
+      fill: #fff
+      @include d-flex
+      &:hover
+        fill: $accent
+
+.vk-link
+  width: 31px
+  height: 19px
+
+.tg-link
+  width: 27px
+  height: 23px
+
+.whatsapp-link
+  width: 27px
+  height: 27px
+
+
+.breadcrumb
+  margin: 48px 0 60px
+  background: transparent
+  padding: 0
+  border: none
+    radius: 0
+  text-transform: uppercase
+  font-size: 16px
+  color: #C8A7A7
+  a
+    color: #C8A7A7
+    &:hover
+      color: #000
+
+.breadcrumb-item
+  padding-left: 5px
+  display: flex
+  align-items: center
+
+.breadcrumb-item+.breadcrumb-item::before
+  padding-right: 5px
+  color: #C8A7A7
+
+.breadcrumb-item.active
+  color: $accent
