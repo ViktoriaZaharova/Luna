@@ -420,3 +420,56 @@ a.color-inherit:hover {
 
 .breadcrumb-item.active {
   color: #C8A7A7; }
+
+.list-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .list-rating li {
+    margin: 0 14px 0 0;
+    width: 21px;
+    height: 20px;
+    fill: #C8A7A7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .list-rating li:last-child {
+      margin: 0; }
+
+.link-accent {
+  color: #C8A7A7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-weight: normal; }
+  .link-accent:hover {
+    color: #000; }
+  .link-accent__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 25px;
+    width: 29px;
+    height: 29px;
+    fill: #C8A7A7; }
