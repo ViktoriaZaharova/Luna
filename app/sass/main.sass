@@ -1114,6 +1114,63 @@
   .btn
     min-width: 156px
 
+.form-basket-box-delivery
+  margin: 32px 0 0
+
+.radio
+  position: relative
+  display: flex
+  align-items: center
+  background: #F8F8F8
+  padding: 8px 13px
+  line-height: 22px
+  width: 100%
+  height: 100%
+  cursor: pointer
+  font-size: 16px
+  font-family: $averta-font
+
+.inp-radio
+  display: none
+  &:checked
+    ~.radio-custom
+        &:before
+          background: $accent
+
+.radio-custom
+  width: 20px
+  height: 20px
+  min-width: 20px
+  margin-left: auto
+  border: 1px solid #C8A7A7
+    radius: 50%
+  background: #fff
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    border-radius: 50%
+    width: 10px
+    height: 10px
+
+
+.radio-text
+  max-width: 207px
+  width: 100%
+
+.delivery-method
+  margin: 18px 0 0
+  textarea
+    height: 66px
+
+.input-title
+  display: block
+  margin: 0 0 15px
+
+
 /*==========  section basket end  ==========*/
 
 /*==========  section page-product ==========*/
