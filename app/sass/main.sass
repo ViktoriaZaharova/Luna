@@ -94,6 +94,9 @@
   @include d-flex
   &:hover
     stroke: $accent
+  &.active
+    stroke: $accent
+    fill: $accent
 /*==========  section bestsellers end  ==========*/
 
 
@@ -457,6 +460,8 @@
     color: $accent
   &:last-child
     margin: 0
+  &.active
+    color: $accent
 
 .reviews-v2
   margin: 110px 0 117px
@@ -992,6 +997,11 @@
   label
     margin: 0
 
+.form-basket-line-promo
+  flex-wrap: wrap
+  label
+    margin: 10px 0
+
 .status-check
   border: 1px solid #C8A7A7
   width: 24px
@@ -1327,8 +1337,11 @@
   &:hover
     background: $accent
     stroke: #fff
+  &.active
+    background: $accent
+    stroke: #fff
 
-.btn-add-card
+.btn-add-card, .ind_b
   height: 60px
   padding: 0 65px
   font-size: 16px
@@ -1340,12 +1353,12 @@
     margin: 0 0 12px
     font-weight: bold
     font-size: 18px
+    width: 100%
   &__line
     width: 100%
     display: flex
+    flex-wrap: wrap
     align-items: center
-
-
   .select
     width: calc(100% - 61px)
     border: 1px solid #C8A7A7
@@ -1355,6 +1368,11 @@
     font-size: 20px
     background: #fff url("../img/arrow-bottom-black.svg") no-repeat calc(100% - 29px) center
       size: 18px
+
+.initials_line
+  margin: 15px 0 0
+  > div
+    width: calc(100% - 61px)
 
 .btn-info
   @include d-flex

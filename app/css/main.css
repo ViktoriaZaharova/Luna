@@ -119,6 +119,9 @@
           justify-content: center; }
   .btn-add-favorite:hover {
     stroke: #C8A7A7; }
+  .btn-add-favorite.active {
+    stroke: #C8A7A7;
+    fill: #C8A7A7; }
 
 /*==========  section bestsellers end  ==========*/
 /*==========  section news ==========*/
@@ -542,6 +545,8 @@
     color: #C8A7A7; }
   .sidebar-item__link:last-child {
     margin: 0; }
+  .sidebar-item__link.active {
+    color: #C8A7A7; }
 
 .reviews-v2 {
   margin: 110px 0 117px; }
@@ -1195,6 +1200,12 @@
   .form-basket-line label {
     margin: 0; }
 
+.form-basket-line-promo {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .form-basket-line-promo label {
+    margin: 10px 0; }
+
 .status-check {
   border: 1px solid #C8A7A7;
   width: 24px;
@@ -1636,8 +1647,11 @@
   .add-favorite:hover {
     background: #C8A7A7;
     stroke: #fff; }
+  .add-favorite.active {
+    background: #C8A7A7;
+    stroke: #fff; }
 
-.btn-add-card {
+.btn-add-card, .ind_b {
   height: 60px;
   padding: 0 65px;
   font-size: 16px; }
@@ -1648,12 +1662,15 @@
   .product-info-item h4 {
     margin: 0 0 12px;
     font-weight: bold;
-    font-size: 18px; }
+    font-size: 18px;
+    width: 100%; }
   .product-info-item__line {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
@@ -1666,6 +1683,11 @@
     font-size: 20px;
     background: #fff url("../img/arrow-bottom-black.svg") no-repeat calc(100% - 29px) center;
       background-size: 18px; }
+
+.initials_line {
+  margin: 15px 0 0; }
+  .initials_line > div {
+    width: calc(100% - 61px); }
 
 .btn-info {
   display: -webkit-box;
