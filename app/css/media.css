@@ -538,7 +538,7 @@
   .basket-links {
     width: 20px;
     height: 21px; }
-  .search-links .svg-icon {
+  .search-links {
     width: 21px;
     height: 21px; }
   .favorite-links {
@@ -838,7 +838,7 @@
   .comments-product-box__name-user {
     margin: 0 0 7px; }
   .form-search-mobile {
-    top: 80px; } }
+    padding: 80px 15px 15px; } }
 
 @media only screen and (max-width: 480px) {
   .breadcrumb {
