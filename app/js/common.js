@@ -96,7 +96,7 @@ $('[name="phone"]').mask('+7 (999) 999 - 99 - 99');
 $('.catalog-menu-dropdown').on('click', function (e) {
     e.preventDefault();
     $(this).toggleClass('click');
-    $('.catalog-menu').slideToggle();
+    $('.catalog-menu').fadeToggle();
 });
 
 $('.btn-filter').on('click', function (e) {
@@ -165,3 +165,20 @@ $('.up').on("click",function () {
     return false;
 });
 
+
+
+// slick active
+$(window).on('load resize', function() {
+    if ($(window).width() > 768) {
+        $('header .search-links svg').on('click', function (e) {
+            e.preventDefault();
+            $('.form-search-header').toggleClass('active');
+        });
+    } else {
+        $('header .search-links').on('click', function (e) {
+            e.preventDefault();
+            $('.form-search-mobile').toggleClass('active');
+        });
+    }
+});
+// slick active

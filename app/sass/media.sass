@@ -250,17 +250,26 @@
   .sidebar
     max-width: none
     width: 100%
-    border: 1px solid #000
-    padding: 15px 18px
     margin: 0 0 22px
+    position: relative
+    border: none
 
   .catalog-menu-dropdown
     display: flex
+    padding: 15px 18px
+    border: 1px solid #000
 
   .catalog-menu
     display: none
-    margin: 29px 0 0
-
+    position: absolute
+    left: 0
+    top: 100%
+    width: 100%
+    padding: 0 18px 15px
+    z-index: 2
+    background: #fff
+    border: 1px solid #000
+      top: none
     li > a.active
       display: none
 
@@ -660,8 +669,9 @@
     height: 21px
 
   .search-links
-    width: 21px
-    height: 21px
+    .svg-icon
+      width: 21px
+      height: 21px
 
 
   .favorite-links
@@ -1046,6 +1056,9 @@
 
   .comments-product-box__name-user
     margin: 0 0 7px
+
+  .form-search-mobile
+    top: 80px
 
 @media only screen and (max-width: 480px)
   .breadcrumb

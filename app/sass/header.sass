@@ -57,8 +57,74 @@ header
       @include d-flex
 
 .search-links
-  width: 25px
-  height: 24px
+  position: relative
+  .svg-icon
+    width: 25px
+    height: 24px
+
+.form-search-header
+  width: 0
+  visibility: hidden
+  opacity: 0
+  position: absolute
+  right: 0
+  top: 0
+  transition: transform .5s ease, width .6s ease
+  z-index: 1
+  transform: translateX(0)
+  margin-top: -5px
+  input
+    background: transparent
+    padding: 5px 0
+    color: #fff
+    border: none
+      bottom: 1px solid $accent
+    &::placeholder
+      color: #fff
+  &.active
+    width: 130px
+    transform: translateX(-1.875rem)
+    visibility: visible
+    opacity: 1
+
+.form-search-mobile
+  position: fixed
+  left: 0
+  top: 96px
+  width: 100%
+  z-index: 3
+  padding: 10px 15px 15px
+  background: #000
+  display: none
+  align-items: center
+  &.active
+    display: flex
+
+  input
+    border: none
+      radius: 0
+      bottom: 1px solid $accent
+    background: transparent
+    padding: 0 0 0 10px
+    color: #fff
+    &::placeholder
+      color: #fff
+  button
+    fill: none
+    stroke: #fff
+    width: 24px
+    height: 40px
+    padding: 0
+    background: transparent
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 0 0 auto
+  label
+    display: inline-block
+    margin: 0
+    width: calc(100% - 30px)
+
 
 .basket-links
   width: 23px
